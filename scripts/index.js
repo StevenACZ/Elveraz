@@ -3,17 +3,20 @@ const search__bar = document.getElementById('search-bar');
 const header__nav = document.getElementById('header__nav');
 const header__icons = document.getElementById('header__icons');
 const categorias = document.getElementById('categorias');
+const categorias__social = document.getElementById('categorias__social');
 const categorias__nav = document.getElementById('categorias__nav');
 const search = document.getElementById('search');
 const share = document.getElementById('share');
 const cross = document.getElementById('cross');
 const bars = document.getElementById('bars');
 
+document.getElementById('categorias__nav').classList.add('hide')
+
 if (screen.width >= 800) {
   document.getElementById('bars').classList.add('hide')
   document.getElementById('share').classList.remove('hide')
   document.getElementById('search').classList.remove('hide')
-  document.getElementById('categorias__nav').classList.add('hide')
+  
 
   search.addEventListener('click', function () {
     header__title.classList.toggle('hide');
@@ -38,7 +41,6 @@ if (screen.width >= 800) {
   document.getElementById('bars').classList.remove('hide')
   document.getElementById('share').classList.add('hide')
   document.getElementById('search').classList.add('hide')
-  document.getElementById('categorias__nav').classList.add('hide')
 
   bars.addEventListener('click', function () {
     header__nav.classList.add('hide');
@@ -46,7 +48,7 @@ if (screen.width >= 800) {
     cross.classList.remove('hide');
     bars.classList.add('hide');
     categorias.classList.add('categorias-activate');
-    categorias.classList.remove('categorias');
+    categorias.classList.add('categorias');
     categorias__nav.classList.remove('hide');
   })
 

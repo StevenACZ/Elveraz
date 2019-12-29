@@ -98,6 +98,7 @@ body {
     color: white;
     font-size: 4.2rem;
     font-weight: bold;
+    text-decoration: none;
   }
 
   .header__search {
@@ -134,13 +135,20 @@ body {
         margin-right: 20px;
       }
 
+      .header__nav > ul > li:nth-of-type(1) > a {
+        padding: 5px 15px;
+        border-radius: 15.5px;
+        background-color: white;
+        color: black;
+      }
+
         .header__nav > ul > li > a {
           font-size: 1.4rem;
           text-decoration: none;
           color: white;
           padding: 5px 15px;
         }
-
+        
         .header__nav > ul > li > a:hover {
           padding: 5px 15px;
           border-radius: 15.5px;
